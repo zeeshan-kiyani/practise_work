@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
+import UserGrid from './components/UserGrid'
 function App() {
   return (
     <div className="App">
       <Footer comp = { `App`}/>
-      <header className="App-header">
+      <UserGrid/>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -19,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
