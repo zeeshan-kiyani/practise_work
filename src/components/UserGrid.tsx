@@ -1,13 +1,9 @@
-import React , {useState,useEffect} from 'react';
-// const ReactTable = require('react-table')
+import React , {useState} from 'react';
 import {Table} from 'react-bootstrap'
-import ReactTable from "react-table";
-// import "react-table/react-table.css";  
 
 let users: {id:number,name:string,age:number}[];
-// let userHeaders : {Header:string, accessor:string}[];
 users = [
-    { id: 1, name: 'Ayaan',  age: 26   },
+    { id: 1, name: 'Ayaan',  age: 26  },
     { id: 2, name: 'Ahana',  age: 22  },
     { id: 3, name: 'Peter',  age: 40  },
     { id: 4, name: 'Virat',  age: 30  },
@@ -42,8 +38,6 @@ const UserGrid = (props:any) => {
 
     return(
         <div>
-            {/* <p>React table</p> */}
-            
             <Table striped bordered hover  size="sm">
             <thead>
                 <tr>

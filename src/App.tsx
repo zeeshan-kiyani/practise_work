@@ -3,26 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './components/Footer'
 import UserGrid from './components/UserGrid'
-
+import UserForm from './components/UserForm'
 function App() {
   return (
     <div className="App">
+      <h2>Change component</h2>
       <Footer comp = { `App`}/>
+      <h2>User Data</h2>
       <UserGrid/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-        rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <h2>User Form</h2>
+      <UserForm/>
     </div>
   );
 }
