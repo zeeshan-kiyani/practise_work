@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import configureStore from './redux/store/index'
 import './App.css';
 import Footer from './components/Footer'
 import UserGrid from './components/UserGrid'
 import UserForm from './components/UserForm'
+import { Provider } from 'react-redux';
+
 function App() {
   return (
+    <Provider store={configureStore()} >
     <div className="App">
       <h2>Change component</h2>
       <Footer comp = { `App`}/>
@@ -14,6 +17,7 @@ function App() {
       <h2>User Form</h2>
       <UserForm/>
     </div>
+    </Provider>
   );
 }
 
